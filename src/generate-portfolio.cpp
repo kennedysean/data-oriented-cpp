@@ -1,11 +1,12 @@
 #include <fstream>
 #include <ctime>
-#define FILE_NAME "stock-symbols.txt"
+#define FILE_NAME "data/stock-symbols.txt"
+#define PORTFOLIO_FILE "data/fake-stock-portfolio.csv"
 
 int main()
 {
     std::ifstream file(FILE_NAME);
-    std::ofstream newFile("fake-stock-portfolio.csv");
+    std::ofstream newFile(PORTFOLIO_FILE);
     newFile << "Stock Symbol,"
             << "Number of Shares Owned,"
             << "Average Cost,"
